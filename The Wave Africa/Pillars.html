@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Pillars – The Wave Africa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="pillarsstyle.css">
+</head>
+<body>
+
+  <!-- ========== HEADER / NAV ========== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#" class="logo-link">
+        <img src="images/wave-africa-logo.jpeg" alt="The Wave Africa Logo" class="logo-img" />
+        <div class="logo-text">
+        <span class="logo-name">THE WAVE AFRICA</span>
+        <span class="logo-sub">EMPOWERING CHANGE</span>
+      </div>
+      </a>
+      
+
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">Who We Are</a></li>
+          <li><a href="Pillars.html" class="active">Our Pillars</a></li>
+          <li><a href="Key.html">Key Programs</a></li>
+          <li><a href="impact.html">Impact</a></li>
+          <li><a href="partner.html">Partner</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero">
+    <div class="hero-bg">
+        <img src="images/The-wave-Africaimg.jpeg" alt="The Wave Africa Group Photo">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">OUR PILLARS</h1>
+      <!-- Wave / crescent icon -->
+      <div class="hero-icon">
+        <svg viewBox="0 0 80 60" xmlns="http://www.w3.org/2000/svg" class="wave-icon-svg">
+          <path d="M10 40 Q20 10 40 30 Q60 50 70 20" stroke="#C9A84C" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <path d="M5 50 Q20 20 40 38 Q60 56 75 28" stroke="#4B7C8A" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.7"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CORE VALUES INTRO ========== -->
+  <section class="core-values-intro">
+    <h2 class="section-title">OUR CORE VALUES</h2>
+    <p class="section-subtitle">
+      At the heart of The Wave Africa are our <strong class="highlight">core pillars</strong> that guide our mission and vision.
+    </p>
+  </section>
+
+  <!-- ========== CORE VALUE CARDS ========== -->
+  <section class="cards-section">
+    <div class="cards-grid">
+
+      <!-- Faith Card -->
+      <div class="pillar-card" data-pillar="faith">
+        <div class="card-icon">
+          <svg viewBox="0 0 60 70" xmlns="http://www.w3.org/2000/svg">
+            <rect x="27" y="5" width="6" height="45" rx="3" fill="#C9A84C"/>
+            <rect x="12" y="18" width="36" height="6" rx="3" fill="#C9A84C"/>
+            <path d="M30 50 L30 65" stroke="#C9A84C" stroke-width="4" stroke-linecap="round"/>
+            <path d="M22 65 L38 65" stroke="#C9A84C" stroke-width="4" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3 class="card-title">FAITH</h3>
+        <p class="card-desc">Anchoring youth in Christ and biblical teachings.</p>
+        <button class="learn-btn" data-target="faith-detail">LEARN MORE</button>
+      </div>
+
+      <!-- Restoration Card -->
+      <div class="pillar-card" data-pillar="restoration">
+        <div class="card-icon">
+          <svg viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg">
+            <path d="M35 15 C35 15 15 25 15 40 C15 52 24 60 35 60 C46 60 55 52 55 40 C55 25 35 15 35 15Z" fill="none" stroke="#C9A84C" stroke-width="3"/>
+            <path d="M25 38 C28 32 32 28 35 35 C38 28 42 32 45 38" stroke="#C9A84C" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <circle cx="35" cy="20" r="4" fill="#C9A84C" opacity="0.6"/>
+          </svg>
+        </div>
+        <h3 class="card-title">RESTORATION</h3>
+        <p class="card-desc">Breathing new life into ancient values and truths to restore purpose.</p>
+        <button class="learn-btn" data-target="restoration-detail">LEARN MORE</button>
+      </div>
+
+      <!-- Community Card -->
+      <div class="pillar-card" data-pillar="community">
+        <div class="card-icon">
+          <svg viewBox="0 0 80 60" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="40" cy="20" r="10" fill="none" stroke="#C9A84C" stroke-width="3"/>
+            <circle cx="15" cy="28" r="8" fill="none" stroke="#C9A84C" stroke-width="3"/>
+            <circle cx="65" cy="28" r="8" fill="none" stroke="#C9A84C" stroke-width="3"/>
+            <path d="M20 50 C20 40 30 35 40 35 C50 35 60 40 60 50" stroke="#C9A84C" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <path d="M2 55 C2 47 8 43 15 43" stroke="#C9A84C" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+            <path d="M78 55 C78 47 72 43 65 43" stroke="#C9A84C" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3 class="card-title">COMMUNITY</h3>
+        <p class="card-desc">Fostering family and fellowship through love, support, and</p>
+        <button class="learn-btn" data-target="community-detail">LEARN MORE</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== OUR PILLARS DETAILED SECTION ========== -->
+  <section class="pillars-detail-section">
+    <div class="divider-line">
+      <span class="divider-ornament"></span>
+    </div>
+    <h2 class="section-title gold">OUR PILLARS</h2>
+    <p class="section-subtitle light">
+      Our pillars form the foundation of our movement, ensuring that we stay true to our mission and vision as we serve the youth of Africa.
+    </p>
+
+    <div class="pillars-list">
+
+      <!-- Faith Detail -->
+      <div class="pillar-item" id="faith-detail">
+        <div class="pillar-item-icon">
+          <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 5 C20 5 5 12 5 22 C5 30 11 36 20 36 C29 36 35 30 35 22 C35 12 20 5 20 5Z" fill="none" stroke="#C9A84C" stroke-width="2.5"/>
+            <path d="M12 22 C14 16 17 12 20 18 C23 12 26 16 28 22" stroke="#C9A84C" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="pillar-item-text">
+          <h3>FAITH</h3>
+          <p>Anchoring youth in a strong relationship with Christ, rooted in biblical truth. We provide discipleship, prayer gatherings, and worship to strengthen their faith and guide their journey.</p>
+        </div>
+      </div>
+
+      <!-- Restoration Detail -->
+      <div class="pillar-item" id="restoration-detail">
+        <div class="pillar-item-icon">
+          <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 5 C20 5 5 12 5 22 C5 30 11 36 20 36 C29 36 35 30 35 22 C35 12 20 5 20 5Z" fill="none" stroke="#C9A84C" stroke-width="2.5"/>
+            <path d="M12 22 C14 16 17 12 20 18 C23 12 26 16 28 22" stroke="#C9A84C" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="pillar-item-text">
+          <h3>RESTORATION</h3>
+          <p>Reviving timeless values and ancient landmarks that have been forgotten. We restore these truths in the hearts of the youth, inspiring them to live purpose-driven lives for God.</p>
+        </div>
+      </div>
+
+      <!-- Community Detail -->
+      <div class="pillar-item" id="community-detail">
+        <div class="pillar-item-icon">
+          <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 5 C20 5 5 12 5 22 C5 30 11 36 20 36 C29 36 35 30 35 22 C35 12 20 5 20 5Z" fill="none" stroke="#C9A84C" stroke-width="2.5"/>
+            <path d="M12 22 C14 16 17 12 20 18 C23 12 26 16 28 22" stroke="#C9A84C" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="pillar-item-text">
+          <h3>COMMUNITY</h3>
+          <p>Fostering family and fellowship through love, support, and accountability. We build a strong community where every youth belongs, grows, and thrives together in Christ.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    
+    <p>© 2026 The Wave Africa · Faith | Restoration | Community</p>
+  </footer>
+
+  <script src="ourpillarsmain.js"></script>
+</body>
+</html>

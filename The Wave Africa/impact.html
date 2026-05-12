@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Impact – The Wave Africa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="pages.css">
+</head>
+<body class="page-impact">
+
+  <!-- NAVBAR -->
+  <header class="site-header" id="siteHeader">
+    <nav class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-circle">
+          <img src="images/wave-africa-logo.jpeg" alt="The Wave africa Logo">
+          <!-- <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="30" cy="30" r="28" stroke="#C9A84C" stroke-width="1.5"/>
+            <path d="M14 34 Q20 26 26 34 Q32 42 38 34 Q44 26 46 30" stroke="#C9A84C" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <text x="50%" y="20" text-anchor="middle" fill="#C9A84C" font-size="6.5" font-family="Cinzel" font-weight="700" letter-spacing="0.5">THE WAVE</text>
+            <text x="50%" y="27" text-anchor="middle" fill="#C9A84C" font-size="5" font-family="Cinzel" letter-spacing="1">AFRICA</text>
+          </svg> -->
+        </div>
+        <div class="nav-logo-text">
+          <span class="logo-name">The Wave Africa</span>
+          <span class="logo-sub">Restoring Ancient Landmarks</span>
+        </div>
+      </a>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Who We Are</a></li>
+        <li><a href="Pillars.html">Our Pillars</a></li>
+        <li><a href="Key.html">Key Programs</a></li>
+        <li><a href="impact.html" class="nav-active">Our Impact</a></li>
+        <li><a href="partner.html">Partner</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO: split layout – photo left, Kenya map right -->
+    <section class="impact-hero" id="impactHero">
+      <div class="impact-hero__photo-col">
+        <div class="impact-hero__overlay"></div>
+        <div class="impact-hero__text" data-animate="fade-up" data-delay="0">
+          <span class="page-eyebrow">Restoring Ancient Landmarks</span>
+          <h1 class="impact-hero__title">OUR IMPACT</h1>
+          <p class="impact-hero__sub">
+            Transforming lives, restoring purpose, and building a generation anchored in <strong>faith</strong>.
+          </p>
+        </div>
+      </div>
+      <div class="impact-hero__map-col" aria-label="Map showing Mombasa, Kenya">
+        <!-- SVG Kenya outline with Mombasa pin -->
+        <div class="impact-map" data-animate="fade-up" data-delay="200">
+          <div id="map"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS GRID -->
+    <section class="impact-stats" id="impactStats">
+      <div class="container impact-stats__grid">
+
+        <div class="impact-stat-card" data-animate="fade-up" data-delay="0">
+          <div class="impact-stat-card__icon">
+            <svg viewBox="0 0 48 48" fill="none">
+              <circle cx="24" cy="14" r="6" stroke="#C9A84C" stroke-width="2"/>
+              <circle cx="12" cy="20" r="5" stroke="#C9A84C" stroke-width="1.8"/>
+              <circle cx="36" cy="20" r="5" stroke="#C9A84C" stroke-width="1.8"/>
+              <path d="M6 40 C6 32 10 28 18 28 L30 28 C38 28 42 32 42 40" stroke="#C9A84C" stroke-width="2" stroke-linecap="round"/>
+              <path d="M2 40 C2 34 5 31 10 30" stroke="#C9A84C" stroke-width="1.6" stroke-linecap="round"/>
+              <path d="M46 40 C46 34 43 31 38 30" stroke="#C9A84C" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="impact-stat-card__content">
+            <span class="impact-stat-card__number" data-count="5000">0</span>
+            <span class="impact-stat-card__plus">+</span>
+            <p class="impact-stat-card__label">Youth Reached</p>
+          </div>
+        </div>
+
+        <div class="impact-stat-card" data-animate="fade-up" data-delay="120">
+          <div class="impact-stat-card__icon">
+            <svg viewBox="0 0 48 48" fill="none">
+              <path d="M24 4 L24 44" stroke="#C9A84C" stroke-width="2" stroke-linecap="round"/>
+              <path d="M12 16 L24 8 L36 16" stroke="#C9A84C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="12" cy="28" r="4" stroke="#C9A84C" stroke-width="1.8"/>
+              <circle cx="36" cy="28" r="4" stroke="#C9A84C" stroke-width="1.8"/>
+              <path d="M8 44 C8 38 10 36 16 36" stroke="#C9A84C" stroke-width="1.6" stroke-linecap="round"/>
+              <path d="M40 44 C40 38 38 36 32 36" stroke="#C9A84C" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="impact-stat-card__content">
+            <span class="impact-stat-card__title">Changamwe, <strong>Mombasa</strong></span>
+            <p class="impact-stat-card__label">Primary location of operations</p>
+          </div>
+        </div>
+
+        <div class="impact-stat-card" data-animate="fade-up" data-delay="240">
+          <div class="impact-stat-card__icon">
+            <!-- Wave Africa emblem -->
+            <svg viewBox="0 0 48 48" fill="none">
+              <path d="M6 30 Q12 18 18 28 Q24 38 30 28 Q36 18 42 24" stroke="#C9A84C" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+              <path d="M20 20 L24 8 L28 20" stroke="#C9A84C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="24" cy="8" r="3" fill="#C9A84C" opacity="0.6"/>
+            </svg>
+          </div>
+          <div class="impact-stat-card__content">
+            <span class="impact-stat-card__title"><strong>Spiritual Growth</strong></span>
+            <p class="impact-stat-card__label">Fostering deeper faith in Jesus Christ</p>
+          </div>
+        </div>
+
+        <div class="impact-stat-card" data-animate="fade-up" data-delay="360">
+          <div class="impact-stat-card__icon">
+            <svg viewBox="0 0 48 48" fill="none">
+              <circle cx="24" cy="20" r="6" stroke="#C9A84C" stroke-width="2"/>
+              <path d="M14 36 C14 30 18 27 24 27 C30 27 34 30 34 36" stroke="#C9A84C" stroke-width="2" stroke-linecap="round"/>
+              <path d="M8 24 C8 20 10 18 13 18" stroke="#C9A84C" stroke-width="1.6" stroke-linecap="round"/>
+              <path d="M40 24 C40 20 38 18 35 18" stroke="#C9A84C" stroke-width="1.6" stroke-linecap="round"/>
+              <path d="M6 40 C6 35 8 33 12 32" stroke="#C9A84C" stroke-width="1.6" stroke-linecap="round"/>
+              <path d="M42 40 C42 35 40 33 36 32" stroke="#C9A84C" stroke-width="1.6" stroke-linecap="round"/>
+              <!-- Circle arrows -->
+              <path d="M38 14 A16 16 0 0 1 42 24" stroke="#C9A84C" stroke-width="1.8" stroke-linecap="round"/>
+              <path d="M10 14 A16 16 0 0 0 6 24" stroke="#C9A84C" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="impact-stat-card__content">
+            <span class="impact-stat-card__title"><strong>Social Transformation</strong></span>
+            <p class="impact-stat-card__label">Empowering youth for positive change</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA STRIP -->
+   <section class="cta-strip">
+    <p class="cta-text">
+    Be part of a movement changing lives across <span>Changamwe, Mombasa</span> — and beyond.
+    </p>
+
+  <a href="partner.html" class="cta-btn">Partner With Us</a>
+</section>
+
+  </main>
+
+  <footer class="site-footer">
+  <div class="footer-container">
+
+    <!-- LEFT: Brand / About -->
+    <div class="footer-brand">
+      <h2 class="footer-logo">The Wave Africa</h2>
+      <p class="footer-tagline">
+        Empowering communities through innovation, advocacy, and impactful programs.
+      </p>
+    </div>
+
+    <!-- CENTER: Contact -->
+    <div class="footer-contact">
+      <div><h3 class="footer-title">Contact Information</h3></div>
+
+      <div class="contact-list">
+        <div class="contact-item">
+        <svg viewBox="0 0 20 20" fill="currentColor">
+          <path d="M10 2C6.686 2 4 4.686 4 8c0 4.418 6 10 6 10s6-5.582 6-10c0-3.314-2.686-6-6-6zm0 8a2 2 0 110-4 2 2 0 010 4z"/>
+        </svg>
+        <span>Changamwe, Mombasa</span>
+      </div>
+
+      <div class="contact-item">
+      <a href="tel:+254768507067" class="contact-item">
+        <svg viewBox="0 0 20 20" fill="currentColor">
+          <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+        </svg>
+        <span>+254 768 507 067</span>
+      </a>
+      </div>
+
+      <div class="contact-item">
+       <a href="mailto:africathewave@gmail.com" class="contact-item">
+        <svg viewBox="0 0 20 20" fill="currentColor">
+          <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+          <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+        </svg>
+        <span>africathewave@gmail.com</span>
+      </a>
+      </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 The Wave Africa. All rights reserved.</p>
+  </div>
+</footer>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" >
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="main.js"></script>
+  <script src="pages.js"></script>
+</body>
+</html>

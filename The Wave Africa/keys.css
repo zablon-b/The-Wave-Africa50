@@ -1,0 +1,421 @@
+/* ============================================================
+   keyprograms.css – The Wave Africa · Key Programs Page
+   Palette:  navy #1A2744  |  gold #C9A84C  |  teal #4B7C8A
+   ============================================================ */
+
+/* ---------- Variables ---------- */
+:root {
+  --navy:        #1A2744;
+  --navy-mid:    #1f2f52;
+  --gold:        #C9A84C;
+  --gold-light:  #e8c96e;
+  --teal:        #4B7C8A;
+  --white:       #ffffff;
+  --text-light:  #d4dae8;
+  --card-bg:     rgba(26, 39, 68, 0.88);
+  --card-border: rgba(201, 168, 76, 0.3);
+  --font-display:'Cinzel', serif;
+  --font-body:   'Lato', sans-serif;
+  --transition:  0.3s ease;
+  --max-w:       900px;
+}
+
+/* ---------- Reset ---------- */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-body);
+  background: var(--navy);
+  color: var(--white);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+img { display: block; max-width: 100%; }
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+.site-header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  background: var(--navy);
+  border-bottom: 1px solid rgba(201,168,76,0.15);
+}
+.header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo-link { display: flex; align-items: center; text-decoration: none; gap: 10px; }
+.logo-img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--gold);
+}
+/* .logo-link { display: flex; 
+  align-items: center; 
+  text-decoration: none;
+  gap: 8px;
+ } */
+
+.logo-img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--gold);
+  margin-right: 0;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  margin-left:0;
+}
+.logo-name {
+  font-weight: bold;
+  font-size: 16px;
+  color: #C9A44C;
+}
+.logo-sub {
+  font-size: 12px;
+  opacity: 0.7;
+  color: #ffffff;
+}
+
+/* Nav */
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+ 
+}
+.main-nav a {
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  color: var(--text-light);
+  padding: 6px 10px;
+  transition: color var(--transition);
+  white-space: nowrap;
+  
+}
+.main-nav a:hover,
+.main-nav a.active { color: var(--gold); }
+.main-nav a.active { border-bottom: 2px solid var(--gold); }
+.main-nav li + li::before {
+  content: '|';
+  color: rgba(255,255,255,0.25);
+  margin-right: 4px;
+  font-size: 0.65rem;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+}
+.hamburger span {
+  display: block;
+  width: 24px; height: 2px;
+  background: var(--gold);
+  border-radius: 2px;
+  transition: transform var(--transition), opacity var(--transition);
+}
+.hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero {
+  position: relative;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 72px;
+  overflow: hidden;
+}
+
+/* Background image (when user adds their photo) */
+.hero-bg-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 90px;
+  object-fit: cover;
+  object-position: center top;
+  z-index: 0;
+  opacity: 0.9;
+}
+
+/* Placeholder shown before user adds their image */
+/* .hero-bg-placeholder {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(160deg, #b07030 0%, #c88830 20%, #4B7C8A 55%, #1A2744 100%);
+  z-index: 0;
+} */
+/* Remove placeholder once an img is present */
+.hero-bg-img ~ .hero-bg-placeholder { display: none; }
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(26,39,68,0.35) 0%,
+    rgba(26,39,68,0.55) 60%,
+    rgba(26,39,68,0.85) 100%
+  );
+  z-index: 1;
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 60px 20px 40px;
+}
+.hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.6rem, 7vw, 4.5rem);
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  color: var(--gold);
+  text-shadow: 0 4px 20px rgba(0,0,0,0.6), 0 0 60px rgba(201,168,76,0.25);
+  margin-bottom: 20px;
+  animation: fadeDown 0.9s ease forwards;
+}
+.hero-icon {
+  display: flex;
+  justify-content: center;
+  animation: fadeIn 1.2s ease 0.3s both;
+}
+.wave-icon-svg { width: 100px; height: 70px; filter: drop-shadow(0 0 10px rgba(201,168,76,0.4)); }
+
+
+/* ============================================================
+   INTRO
+   ============================================================ */
+.intro-section {
+  background: var(--navy);
+  padding: 44px 24px 36px;
+  text-align: center;
+}
+.intro-text {
+  font-family: var(--font-body);
+  font-size: clamp(0.97rem, 2.2vw, 1.13rem);
+  color: var(--text-light);
+  max-width: 660px;
+  margin: 0 auto;
+  line-height: 1.85;
+}
+.highlight { color: var(--gold); font-weight: 700; }
+
+/* ============================================================
+   PROGRAMS GRID
+   ============================================================ */
+.programs-section {
+  padding: 12px 24px 64px;
+  background: var(--navy);
+}
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  max-width: var(--max-w);
+  margin: 0 auto;
+}
+
+/* -------- Program Card -------- */
+.program-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
+  animation: fadeUp 0.7s ease both;
+}
+.programs-grid .program-card:nth-child(1) { animation-delay: 0.05s; }
+.programs-grid .program-card:nth-child(2) { animation-delay: 0.18s; }
+.programs-grid .program-card:nth-child(3) { animation-delay: 0.31s; }
+.programs-grid .program-card:nth-child(4) { animation-delay: 0.44s; }
+
+.program-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--gold);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.45), 0 0 28px rgba(201,168,76,0.12);
+}
+
+/* ----- Card Image Area ----- */
+.card-img-wrapper {
+  width: 100%;
+  height: 220px;        /* adjust as needed */
+  overflow: hidden;
+  flex-shrink: 0;
+  position: relative;
+}
+
+/*
+  YOUR IMAGE — when you add <img class="card-img" ...> inside .card-img-wrapper
+  it will automatically fill this area perfectly.
+*/
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.5s ease;
+}
+.program-card:hover .card-img { transform: scale(1.05); }
+
+/* Placeholder shown before image is added */
+.card-img-placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #1f2f52 0%, #243160 50%, #2a3870 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px dashed rgba(201,168,76,0.3);
+}
+.card-img-placeholder span {
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  color: rgba(201,168,76,0.45);
+  text-align: center;
+  padding: 0 16px;
+}
+/* Hide placeholder once user adds an img sibling */
+.card-img ~ .card-img-placeholder { display: none; }
+
+/* ----- Card Body ----- */
+.card-body {
+  padding: 24px 22px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+}
+.card-title {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+.card-desc {
+  font-size: 0.88rem;
+  color: var(--text-light);
+  line-height: 1.7;
+  margin-bottom: 22px;
+  flex: 1;
+}
+.learn-btn {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--gold);
+  background: transparent;
+  border: 1.5px solid var(--gold);
+  border-radius: 4px;
+  padding: 9px 28px;
+  cursor: pointer;
+  transition: background var(--transition), color var(--transition);
+  margin-top: auto;
+}
+.learn-btn:hover {
+  background: var(--gold);
+  color: var(--navy);
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.site-footer {
+  background: var(--navy-mid);
+  border-top: 1px solid rgba(201,168,76,0.15);
+  text-align: center;
+  padding: 24px;
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  color: rgba(255,255,255,0.38);
+}
+
+/* ============================================================
+   ANIMATIONS
+   ============================================================ */
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 768px) {
+  /* Mobile nav */
+  .main-nav {
+    display: none;
+    position: absolute;
+    top: 72px; left: 0; right: 0;
+    background: var(--navy);
+    padding: 20px 24px;
+    border-top: 1px solid rgba(201,168,76,0.15);
+  }
+  .main-nav.open { display: block; }
+  .main-nav ul { flex-direction: column; gap: 0; }
+  .main-nav li + li::before { display: none; }
+  .main-nav a { display: block; padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
+  .hamburger { display: flex; }
+
+  /* Single column grid on mobile */
+  .programs-grid {
+    grid-template-columns: 1fr;
+    max-width: 420px;
+  }
+  .card-img-wrapper { height: 200px; }
+  .hero { min-height: 300px; }
+}
+
+@media (max-width: 480px) {
+  .hero-title { font-size: 2.2rem; }
+  .intro-text { font-size: 0.93rem; }
+}

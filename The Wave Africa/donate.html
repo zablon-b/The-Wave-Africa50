@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support The Wave – The Wave Africa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="pages.css" />
+
+  <!-- ✅ Flutterwave Payment SDK -->
+  <script src="https://checkout.flutterwave.com/v3.js"></script>
+</head>
+<body class="page-donate">
+
+  <!-- NAVBAR -->
+  <header class="site-header" id="siteHeader">
+    <nav class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-circle">
+          <img src="images/wave-africa-logo.jpeg" alt="The Wave Africa Logo" class="logo-img">
+        </div>
+        <div class="nav-logo-text">
+          <span class="logo-name">THE WAVE AFRICA</span>
+          <span class="logo-sub">RESTORING ANCIENT LANDMARKS</span>
+        </div>
+      </a>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Who We Are</a></li>
+        <li><a href="Pillars.html">Our Pillars</a></li>
+        <li><a href="Key.html">Key Programs</a></li>
+        <li><a href="partner.html">Partner</a></li>
+        <li><a href="impact.html">Our Impact</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- FULL-SCREEN DONATE HERO -->
+    <section class="donate-hero" id="donateHero">
+      <div class="donate-hero__overlay"></div>
+
+      <!-- Warm light rays -->
+      <div class="donate-hero__rays" aria-hidden="true">
+        <span></span><span></span><span></span><span></span>
+      </div>
+
+      <div class="donate-hero__content">
+        <span class="page-eyebrow page-eyebrow--light" data-animate="fade-up" data-delay="0">Make A Difference Today</span>
+        <h1 class="donate-hero__title" data-animate="fade-up" data-delay="100">SUPPORT THE WAVE</h1>
+        <div class="page-divider page-divider--center" data-animate="scale-x" data-delay="220" aria-hidden="true"></div>
+        <p class="donate-hero__sub" data-animate="fade-up" data-delay="320">
+          Your generosity fuels transformation, hope, and purpose.
+        </p>
+
+        <!-- Donation type toggle -->
+        <div class="donate-toggle" data-animate="fade-up" data-delay="420" role="group" aria-label="Donation frequency">
+          <button class="donate-toggle__btn active" id="btnOneTime" aria-pressed="true">One-time gift</button>
+          <button class="donate-toggle__btn" id="btnMonthly" aria-pressed="false">Monthly support</button>
+        </div>
+
+        <!-- Amount grid -->
+        <div class="donate-amounts" data-animate="fade-up" data-delay="500">
+          <button class="donate-amount__btn" data-amount="500">KES 500</button>
+          <button class="donate-amount__btn" data-amount="1000">KES 1,000</button>
+          <button class="donate-amount__btn active" data-amount="2500">KES 2,500</button>
+          <button class="donate-amount__btn" data-amount="5000">KES 5,000</button>
+          <button class="donate-amount__btn donate-amount__btn--custom" id="btnCustom">Custom</button>
+        </div>
+
+        <!-- Custom amount input (hidden by default) -->
+        <div class="donate-custom-wrap" id="customAmountWrap" hidden>
+          <label for="customAmount" class="sr-only">Enter custom amount in KES</label>
+          <span class="donate-custom-wrap__prefix">KES</span>
+          <input type="number" id="customAmount" class="donate-custom-input" placeholder="Enter amount" min="1" />
+        </div>
+
+        <!-- ✅ Donor name & email — required by Flutterwave, styled to match the page -->
+        <div class="donate-donor-fields" data-animate="fade-up" data-delay="560">
+          <input
+            type="text"
+            id="donorName"
+            class="donate-donor-input"
+            placeholder="Your Name"
+            autocomplete="name"
+          />
+          <input
+            type="email"
+            id="donorEmail"
+            class="donate-donor-input"
+            placeholder="Your Email"
+            autocomplete="email"
+          />
+        </div>
+
+        <!-- ✅ Changed from <a> to <button> so pages.js click handler works -->
+        <button class="kp-btn kp-btn--gold donate-cta-btn" id="donateNowBtn" data-animate="fade-up" data-delay="580">
+          DONATE NOW
+        </button>
+
+        <p class="donate-hero__note" data-animate="fade-up" data-delay="650">
+          Every contribution helps us reach more youth.
+        </p>
+
+        <!-- ✅ Accepted payment methods hint -->
+        <p class="donate-hero__methods" data-animate="fade-up" data-delay="700">
+          💳 Cards &nbsp;|&nbsp; 📱 M-Pesa &nbsp;|&nbsp; 🌍 Mobile Money
+        </p>
+      </div>
+    </section>
+
+    <!-- IMPACT OF DONATION -->
+    <section class="donate-impact">
+      <div class="container donate-impact__grid">
+        <div class="donate-impact__item" data-animate="fade-up" data-delay="0">
+          <span class="donate-impact__amount">KES 500</span>
+          <p class="donate-impact__effect">Covers materials for one youth mentorship session</p>
+        </div>
+        <div class="donate-impact__item" data-animate="fade-up" data-delay="120">
+          <span class="donate-impact__amount">KES 1,000</span>
+          <p class="donate-impact__effect">Sponsors a youth to attend a Worshippers Affair event</p>
+        </div>
+        <div class="donate-impact__item" data-animate="fade-up" data-delay="240">
+          <span class="donate-impact__amount">KES 5,000</span>
+          <p class="donate-impact__effect">Funds one full Talent Mentorship workshop session</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__social">
+      <a href="https://www.facebook.com/profile.php?id=61575569888737&mibextid=rS40aB7S9Ucbxw6v" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="site-footer__social-link">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+      </a>
+      <a href="https://wa.me/254768507067" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="site-footer__social-link">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.52 3.48A11.82 11.82 0 0012.04 0C5.4 0 .02 5.38.02 12c0 2.12.56 4.2 1.62 6.03L0 24l6.16-1.6A11.94 11.94 0 0012.04 24C18.68 24 24 18.62 24 12c0-3.2-1.24-6.2-3.48-8.52zM12.04 21.8c-1.8 0-3.56-.48-5.12-1.4l-.36-.2-3.66.96.98-3.56-.24-.36A9.7 9.7 0 012.24 12c0-5.4 4.4-9.8 9.8-9.8s9.8 4.4 9.8 9.8-4.4 9.8-9.8 9.8zm5.38-7.36c-.3-.16-1.76-.88-2.04-.98-.28-.1-.48-.16-.68.16s-.78.98-.96 1.18c-.18.2-.36.22-.66.08-.3-.16-1.28-.46-2.44-1.48-.9-.8-1.5-1.78-1.68-2.08-.18-.3-.02-.46.14-.62.14-.14.3-.36.46-.54.16-.18.2-.3.3-.5.1-.2.04-.38-.02-.54-.08-.16-.68-1.64-.94-2.24-.24-.58-.5-.5-.68-.5h-.58c-.2 0-.52.08-.8.38s-1.04 1.02-1.04 2.5 1.06 2.92 1.2 3.12c.16.2 2.08 3.18 5.04 4.46.7.3 1.26.48 1.68.62.7.22 1.34.2 1.84.12.56-.08 1.76-.72 2-1.42.26-.7.26-1.3.18-1.42-.08-.12-.28-.2-.58-.36z"/></svg>
+      </a>
+      <a href="https://www.youtube.com/@TheWaveAfrica" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="site-footer__social-link">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 7s-.2-1.5-.8-2.2c-.8-.9-1.7-.9-2.1-1C17.2 3.5 12 3.5 12 3.5s-5.2 0-8.1.3c-.4.1-1.3.1-2.1 1C1.2 5.5 1 7 1 7S.8 8.8.8 10.6v1.7C.8 14 .9 15.8.9 15.8s.2 1.5.8 2.2c.8.9 1.9.9 2.4 1 1.7.2 7.2.3 7.9.3s5.2 0 8.1-.3c.4-.1 1.3-.1 2.1-1 .6-.7.8-2.2.8-2.2s.2-1.8.2-3.5v-1.7C23.2 8.8 23 7 23 7z"/><polygon points="9.5,8 16,12 9.5,16"/></svg>
+      </a>
+      <a href="https://www.tiktok.com/@the.wave.africa?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer" aria-label="TikTok" class="site-footer__social-link">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.589 6.686a4.793 4.793 0 01-3.77-4.237V2h-3.193v13.766c0 1.338-1.07 2.432-2.386 2.432-1.317 0-2.387-1.094-2.387-2.432 0-1.339 1.07-2.433 2.387-2.433.258 0 .506.041.738.116V10.19a5.768 5.768 0 00-.738-.05C7.026 10.14 4 13.234 4 17.048 4 20.862 7.026 24 10.74 24c3.713 0 6.739-3.138 6.739-6.952V9.777a7.954 7.954 0 004.521 1.423V8.007a4.79 4.79 0 01-2.411-.321z"/></svg>
+      </a>
+      <a href="mailto:africathewave@gmail.com" class="site-footer__item">
+        <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
+        africathewave@gmail.com
+      </a>
+      <a href="tel:+254768507067" class="site-footer__item">
+        <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
+        +254 768 507 067
+      </a>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script src="pages.js"></script>
+</body>
+</html>

@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <title>The Wave Africa – Restoring Ancient Landmarks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet" >
+  <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav id="navbar">
+    <div class="nav-inner">
+
+      <!-- Logo -->
+      <a href="#home" class="nav-logo"> 
+        <div class="nav-logo-circle">
+        <img src="images/wave-africa-logo.jpeg" alt="The Wave Africa Logo">
+          <svg viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="17" cy="17" r="16" stroke="#f0c96a" stroke-width="1.5"/>
+            <path d="M17 6 C10 6, 5 12, 8 18 C11 24, 17 24, 17 24 C17 24, 23 24, 26 18 C29 12, 24 6, 17 6Z" fill="#4a7a8a" opacity="0.6"/>
+            <path d="M14 9 C9 9, 7 14, 10 18 C12 21, 17 22, 17 22" stroke="#f0c96a" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            <line x1="17" y1="8" x2="17" y2="22" stroke="#f0c96a" stroke-width="1.8" stroke-linecap="round"/>
+            <line x1="12" y1="14" x2="22" y2="14" stroke="#f0c96a" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="nav-logo-text">
+          <span class="logo-name">The Wave Africa</span>
+          <span class="logo-sub">Restoring Ancient Landmarks</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <div class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link">Home</a>
+        <span class="nav-sep">|</span>
+        <a href="#who" class="nav-link">Who We Are</a>
+        <span class="nav-sep">|</span>
+        <a href="#pillars" class="nav-link">Our Pillars</a>
+        <span class="nav-sep">|</span>
+        <a href="#programs" class="nav-link">Key Programs</a>
+        <span class="nav-sep">|</span>
+        <a href="#impact" class="nav-link">Impact</a>
+        <span class="nav-sep">|</span>
+        <a href="#partner" class="nav-link btn-partner">Partner</a>
+        <a href="#donate" class="nav-link btn-donate-nav">Donate</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+
+      <!-- Hamburger (Mobile) -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home" class="mobile-link">Home</a>
+    <a href="#who" class="mobile-link">Who We Are</a>
+    <a href="#pillars" class="mobile-link">Our Pillars</a>
+    <a href="#programs" class="mobile-link">Key Programs</a>
+    <a href="#impact" class="mobile-link">Impact</a>
+    <a href="#partner" class="mobile-link">Partner</a>
+    <a href="#donate" class="mobile-link">Donate</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+  </div>
+
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="home">
+
+    <!-- Animated SVG wave background -->
+    <div class="hero-bg">
+        <img src="images/The-wave-Africaimg.jpeg" alt="The Wave Africa Group Photo">
+    </div>
+    <svg class="hero-wave-svg" viewBox="0 0 1440 800" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+      <path class="wave-path-1" d="M0,400 C200,300 400,500 600,400 C800,300 1000,500 1200,400 C1350,320 1400,380 1440,360 L1440,800 L0,800Z"/>
+      <path class="wave-path-2" d="M0,500 C250,420 450,580 700,480 C900,400 1100,560 1440,460 L1440,800 L0,800Z"/>
+      <circle class="wave-circle-1" cx="200" cy="200" r="150"/>
+      <circle class="wave-circle-2" cx="1200" cy="600" r="200"/>
+    </svg>
+
+    <!-- Hero Content -->
+    <div class="hero-content" id="heroContent">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Mombasa-Kenya
+        <span class="badge-dot"></span>
+      </div>
+
+      <h1 class="hero-title">
+        The Wave
+        <span class="hero-title-africa">Africa</span>
+      </h1>
+
+      <p class="hero-subtitle">A Christian-Led Youth Movement</p>
+      <p class="hero-tagline">Restoring Ancient Landmarks</p>
+
+      <div class="hero-pillars">
+        <span>Faith</span>
+        <span class="pillar-sep">|</span>
+        <span>Restoration</span>
+        <span class="pillar-sep">|</span>
+        <span>Community</span>
+      </div>
+
+      <div class="hero-btns">
+        <a href="#who" class="btn btn-primary">Learn More</a>
+        <a href="#partner" class="btn btn-outline">Partner With Us</a>
+        <a href="#donate" class="btn btn-outline btn-teal">Donate</a>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+
+  </section>
+
+
+  <!-- ========== WHO WE ARE ========== -->
+  <section class="section who-section" id="who">
+    <div class="container">
+      <div class="who-grid">
+
+        <!-- Text -->
+        <div class="who-text reveal">
+          <span class="section-label">Who We Are</span>
+          <h2 class="section-title">A Movement of <span class="gold">Purpose</span></h2>
+          <div class="gold-line"></div>
+          <p>The Wave Africa is a Christian-led youth group based in Changamwe, Mombasa. We are a movement dedicated to spiritual renewal and social empowerment for the youth of Africa.</p>
+          <p>We believe in anchoring the next generation in faith while equipping them with the tools to lead with integrity.</p>
+          <p>Through music, mentorship, and community action, we are raising a generation that stands as a wave of change — restoring the moral, spiritual, and social foundations of our communities.</p>
+          <div class="cta-buttons">
+            <a href="about.html" class="btn btn-outline btn-sm">Learn More About who We Are</a>
+           <!--  <a href="#pillars" class="btn btn-outline btn-sm">Our Pillars &rarr;</a> -->
+          </div>
+          
+        </div>
+
+        <!-- Visual Emblem -->
+        <div class="who-visual reveal">
+          <div class="wave-emblem">
+            <img src="images/wave-africa-logo.jpeg" alt="The Wave Africa Logo">
+            <!-- <svg viewBox="0 0 80 80" width="80" height="80" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10,50 Q25,30 40,50 Q55,70 70,50" stroke="#f0c96a" stroke-width="3" fill="none" stroke-linecap="round"/>
+              <path d="M5,60 Q22,35 40,60 Q58,85 75,60" stroke="#4a7a8a" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.7"/>
+              <line x1="40" y1="15" x2="40" y2="45" stroke="#f0c96a" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="26" y1="25" x2="54" y2="25" stroke="#f0c96a" stroke-width="2.5" stroke-linecap="round"/>
+            </svg> -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========== OUR PILLARS ========== -->
+  <section class="section pillars-section" id="pillars">
+    <div class="container">
+      <div class="center">
+        <span class="section-label">Our Core Pillars</span>
+        <h2 class="section-title">What We <span class="gold">Stand For</span></h2>
+        <div class="gold-line gold-line-center"></div>
+      </div>
+
+      <div class="pillars-grid">
+
+        <!-- Faith -->
+        <div class="pillar-card reveal">
+          <div class="pillar-top-bar"></div>
+          <div class="pillar-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#f0c96a" stroke-width="1.8" stroke-linecap="round">
+              <line x1="12" y1="2" x2="12" y2="22"/>
+              <line x1="5" y1="8" x2="19" y2="8"/>
+            </svg>
+          </div>
+          <h3 class="pillar-name">Faith</h3>
+          <p class="pillar-desc">Centering every program on Christ-centered values. We anchor all we do in a living, active faith that transforms individuals and communities from the inside out.</p>
+          <span class="pillar-tag">Faith · Restoration · Community</span>
+        </div>
+
+        <!-- Restoration -->
+        <div class="pillar-card reveal">
+          <div class="pillar-top-bar"></div>
+          <div class="pillar-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#f0c96a" stroke-width="1.8" stroke-linecap="round">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+              <path d="M2 17l10 5 10-5"/>
+              <path d="M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <h3 class="pillar-name">Restoration</h3>
+          <p class="pillar-desc">Reclaiming moral and social foundations for youth. We work to restore what has been broken — rebuilding dignity, purpose, and direction in young lives across Mombasa.</p>
+          <span class="pillar-tag">Faith · Restoration · Community</span>
+        </div>
+
+        <!-- Community -->
+        <div class="pillar-card reveal">
+          <div class="pillar-top-bar"></div>
+          <div class="pillar-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#f0c96a" stroke-width="1.8" stroke-linecap="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <h3 class="pillar-name">Community</h3>
+          <p class="pillar-desc">Fostering unity and peace across all wards in the constituency. We build bridges across divides, creating safe spaces for youth to grow, connect, and thrive together.</p>
+          <span class="pillar-tag">Faith · Restoration · Community</span>
+        </div>
+        <div class="cta-buttons">
+            <a href="Pillars.html" class="btn btn-outline btn-sm">Learn More About Our Pillars</a>
+           <!--  <a href="#pillars" class="btn btn-outline btn-sm">Our Pillars &rarr;</a> -->
+          </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========== KEY PROGRAMS ========== -->
+  <section class="section programs-section" id="programs">
+    <div class="container">
+      <span class="section-label">What We Do</span>
+      <h2 class="section-title">Key <span class="gold">Programs</span></h2>
+      <div class="gold-line"></div>
+
+      <div class="programs-grid">
+
+        <!-- Worshippers Affair -->
+        <div class="program-card reveal">
+          <div class="program-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#f0c96a" stroke-width="1.8" stroke-linecap="round">
+              <path d="M9 18V5l12-2v13"/>
+              <circle cx="6" cy="18" r="3"/>
+              <circle cx="18" cy="16" r="3"/>
+            </svg>
+          </div>
+          <div class="program-body">
+            <h3 class="program-name">The Worshippers Affair</h3>
+            <p class="program-desc">Major spiritual gatherings for worship and renewal. These events bring together hundreds of youth in powerful worship experiences that reignite faith and purpose.</p>
+          </div>
+        </div>
+
+        <!-- Landmark Praise -->
+        <div class="program-card reveal">
+          <div class="program-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#f0c96a" stroke-width="1.8" stroke-linecap="round">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+            </svg>
+          </div>
+          <div class="program-body">
+            <h3 class="program-name">Landmark Praise</h3>
+            <p class="program-desc">High-impact events celebrating gospel talent and ministry. A flagship platform that showcases and nurtures musical gifts while glorifying God through the arts.</p>
+          </div>
+        </div>
+
+        <!-- Talent Mentorship -->
+        <div class="program-card reveal">
+          <div class="program-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#f0c96a" stroke-width="1.8" stroke-linecap="round">
+              <path d="M12 20h9"/>
+              <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
+            </svg>
+          </div>
+          <div class="program-body">
+            <h3 class="program-name">Talent Mentorship</h3>
+            <p class="program-desc">Professional coaching for musicians, artists, and creative ministers. We invest in raw talent with structured mentorship, transforming potential into purposeful ministry.</p>
+          </div>
+        </div>
+
+        <!-- Youth Advocacy -->
+        <div class="program-card reveal">
+          <div class="program-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#f0c96a" stroke-width="1.8" stroke-linecap="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <line x1="19" y1="8" x2="23" y2="12"/>
+              <line x1="23" y1="8" x2="19" y2="12"/>
+            </svg>
+          </div>
+          <div class="program-body">
+            <h3 class="program-name">Youth Advocacy</h3>
+            <p class="program-desc">Programs steering youth away from social vices toward productive lives. We create safe spaces, alternative pathways, and accountability networks for vulnerable young people.</p>
+          </div>
+        </div>
+        <div class="cta-buttons">
+            <a href="Key.html" class="btn btn-outline btn-sm">Learn More About Our Key Programs</a>
+           <!--  <a href="#pillars" class="btn btn-outline btn-sm">Our Pillars &rarr;</a> -->
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========== IMPACT ========== -->
+  <section class="section impact-section" id="impact">
+    <div class="container">
+      <div class="center">
+        <span class="section-label">Our Impact at a Glance</span>
+        <h2 class="section-title">Making Waves <span class="gold">Across Mombasa</span></h2>
+        <div class="gold-line gold-line-center"></div>
+      </div>
+
+      <div class="impact-inner">
+        <div class="impact-grid">
+
+          <!-- Map Visual -->
+          <div class="impact-map reveal">
+            <p class="map-label">Mombasa County</p>
+            <p class="map-sub">Primarily active in</p>
+            <p class="map-location">Changamwe Constituency</p>
+            <div class="map-pin"></div>
+            <svg viewBox="0 0 120 120" class="map-svg">
+              <ellipse cx="60" cy="60" rx="45" ry="55" fill="none" stroke="#4a7a8a" stroke-width="1.5"/>
+              <path d="M40,40 L80,40 L85,60 L80,80 L40,80 L35,60Z" fill="rgba(74,122,138,0.2)" stroke="#4a7a8a" stroke-width="1"/>
+              <circle cx="60" cy="65" r="5" fill="#f0c96a"/>
+              <line x1="60" y1="45" x2="60" y2="60" stroke="#f0c96a" stroke-width="1.5"/>
+            </svg>
+          </div>
+
+          <!-- Stats -->
+          <div class="impact-stats reveal">
+            <div class="stat-big">
+              <span class="stat-num" data-target="5000">0</span>
+              <p class="stat-label">Young people engaged through safe-space events and community programs across Mombasa</p>
+            </div>
+            <div class="stat-row">
+              <div class="stat-mini">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#6a9aaa" stroke-width="1.5" stroke-linecap="round" width="22" height="22">
+                  <circle cx="12" cy="12" r="10"/>
+                  <line x1="12" y1="8" x2="12" y2="12"/>
+                  <line x1="12" y1="16" x2="12.01" y2="16"/>
+                </svg>
+                <span>Spiritual<br>Growth</span>
+              </div>
+              <div class="stat-mini">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#6a9aaa" stroke-width="1.5" stroke-linecap="round" width="22" height="22">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+                <span>Social<br>Cohesion</span>
+              </div>
+              <div class="stat-mini">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#6a9aaa" stroke-width="1.5" stroke-linecap="round" width="22" height="22">
+                  <rect x="2" y="3" width="20" height="14" rx="2"/>
+                  <line x1="8" y1="21" x2="16" y2="21"/>
+                  <line x1="12" y1="17" x2="12" y2="21"/>
+                </svg>
+                <span>Capacity<br>Building</span>
+              </div>
+            </div>
+          </div>
+          <div class="cta-buttons">
+            <a href="impact.html" class="btn btn-outline btn-sm">Learn More About Our Impact</a>
+           <!--  <a href="#pillars" class="btn btn-outline btn-sm">Our Pillars &rarr;</a> -->
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========== DONATE BANNER ========== -->
+  <section class="donate-banner" id="donate">
+    <div class="container center">
+      <h2 class="donate-title">Be Part of the Wave of Change</h2>
+      <p class="donate-desc">Your donation empowers youth, fuels worship events, and restores communities across Mombasa. Every contribution — big or small — creates ripples that last generations.</p>
+      <div class="donate-btns">
+        <a href="donate.html" class="btn btn-dark">Donate Now</a>
+        <a href="#partner" class="btn btn-dark btn-dark-outline">Partner With Us</a>
+      </div>
+      
+    </div>
+  </section>
+
+
+  <!-- ========== PARTNER ========== -->
+  <section class="section partner-section" id="partner">
+    <div class="container">
+      <div class="center">
+        <span class="section-label">How to Partner</span>
+        <h2 class="section-title">Join the <span class="gold">Wave</span></h2>
+        <div class="gold-line gold-line-center"></div>
+      </div>
+
+      <div class="partner-grid">
+
+        <!-- Strategic Partners -->
+        <div class="partner-card reveal">
+          <div class="partner-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#f0c96a" stroke-width="1.5" stroke-linecap="round" width="28" height="28">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+            </svg>
+          </div>
+          <h3 class="partner-type-name">Strategic Partners</h3>
+          <p class="partner-type-desc">Align your organization's mission with ours. Together we can design and deliver programs that create lasting impact for Mombasa's youth.</p>
+        </div>
+
+        <!-- Resource Investors -->
+        <div class="partner-card reveal">
+          <div class="partner-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#f0c96a" stroke-width="1.5" stroke-linecap="round" width="28" height="28">
+              <line x1="12" y1="1" x2="12" y2="23"/>
+              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+            </svg>
+          </div>
+          <h3 class="partner-type-name">Resource Investors</h3>
+          <p class="partner-type-desc">Provide financial resources, equipment, or in-kind support that directly funds our events, mentorship programs, and community outreach.</p>
+        </div>
+
+        <!-- Community Mentors -->
+        <div class="partner-card reveal">
+          <div class="partner-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#f0c96a" stroke-width="1.5" stroke-linecap="round" width="28" height="28">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <h3 class="partner-type-name">Community Mentors</h3>
+          <p class="partner-type-desc">Give your time and expertise. Share your skills with young people in Changamwe and become a voice of wisdom and direction in their lives.</p>
+        </div>
+
+      </div>
+
+      <div class="partner-cta center">
+        <p class="partner-quote">"We are looking for Strategic Partners, Resource Investors, and Community Mentors to help scale our Wave of Change."</p>
+        <a href="partner.html" class="btn btn-primary">Partner With Us Now</a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========== FOOTER / CONTACT ========== -->
+  <footer id="contact">
+    <div class="footer-inner">
+      <div class="footer-grid">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+            <!-- <h3 class="footer-logo-name">The Wave Africa <span class="footer-tagline">RESTORING ANCIENT LANDMARKS</span></h3> -->
+          <p class="footer-logo-name">The Wave Africa</p>
+          <p class="footer-tagline">Restoring Ancient Landmarks</p>
+          <p class="footer-about">A Christian-led youth movement based in Changamwe, Mombasa — dedicated to spiritual renewal and social empowerment for the youth of Africa.</p>
+          <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=61575569888737" class="social-link" title="Facebook"><img src="images/fb.jpg" alt="Facebook"></a>
+            <a href="https://vm.tiktok.com/ZS9Lecgj55X66-wWnQc/" class="social-link" title="TikTok"><img src="images/tiktok.png" alt="TikTok"></a>
+            <a href="https://www.youtube.com/@TheWaveAfrica" class="social-link" title="YouTube"><img src="images/YouTube.png" alt="YouTube"></a>
+          </div>
+        </div>
+
+        <!-- Navigate -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Navigate</h4>
+          <ul class="footer-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="about.html">Who We Are</a></li>
+            <li><a href="Pillars.html">Our Pillars</a></li>
+            <li><a href="#programs">Key Programs</a></li>
+            <li><a href="#impact">Impact</a></li>
+            <li><a href="#partner">Partner</a></li>
+            <li><a href="#donate">Donate</a></li>
+          </ul>
+        </div>
+
+        <!-- Programs -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Programs</h4>
+          <ul class="footer-list">
+            <li><a href="#programs">The Worshippers Affair</a></li>
+            <li><a href="#programs">Landmark Praise</a></li>
+            <li><a href="#programs">Talent Mentorship</a></li>
+            <li><a href="#programs">Youth Advocacy</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Contact Us</h4>
+
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#f0c96a" stroke-width="1.8" stroke-linecap="round" width="14" height="14">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            <span>Changamwe, Mombasa County, Kenya</span>
+          </div>
+
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#f0c96a" stroke-width="1.8" stroke-linecap="round" width="14" height="14">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.81a16 16 0 0 0 6.29 6.29l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            <span><a href="tell:+254768507067">+254 768 507 067</a></span>
+          </div>
+
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#f0c96a" stroke-width="1.8" stroke-linecap="round" width="14" height="14">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            <span><a href="https://mail.google.com/mail/?view=cm&fs=1&to=africathewave@gmail.com&" target="_blank"> africathewave@gmail.com</a></span>
+          </div>
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#f0c96a" stroke-width="1.8" stroke-linecap="round" width="14" height="14">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            <span><a href="https://wa.me/254768507067" target="_blank"> Chat on WhatsApp</a></span>
+          </div>
+
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#f0c96a" stroke-width="1.8" stroke-linecap="round" width="14" height="14">
+              <rect x="2" y="2" width="20" height="20" rx="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+            <span>@TheWaveAfrica</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2026 The Wave Africa. All rights reserved. | Changamwe, Mombasa.</p>
+        <p class="footer-creed">Faith | Restoration | Community</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">&#8593;</button>
+
+  <script src="main.js"></script>
+</body>
+</html>
